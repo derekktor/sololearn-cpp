@@ -10,4 +10,15 @@ public:
     ~Player();
 };
 
+Player::Player(int x)
+{
+    points = x;
+    points %= 5;
+}
+
+Player::~Player()
+{
+    std::cout << "Remaining points = " << points << std::endl;
+}
+
 #endif
